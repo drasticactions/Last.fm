@@ -236,7 +236,7 @@ namespace Hqub.Lastfm
 
             if (automaticDecompression)
             {
-                handler.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+                // handler.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
             }
 
             client = new HttpClient(handler);

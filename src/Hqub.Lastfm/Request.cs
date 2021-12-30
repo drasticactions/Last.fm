@@ -56,7 +56,7 @@ namespace Hqub.Lastfm
             }
         }
 
-        public async Task<XDocument> GetAsync(CancellationToken ct = default, bool secure = false)
+        public async Task<XDocument> GetAsync(CancellationToken ct = default, bool secure = true)
         {
             try
             {
