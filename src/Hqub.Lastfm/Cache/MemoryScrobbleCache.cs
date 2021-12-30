@@ -28,7 +28,7 @@ namespace Hqub.Lastfm.Cache
             {
                 cache[item.Date] = item;
             }
-#if NET45
+#if NET452
             return Task.FromResult(0);
 #else
             return Task.CompletedTask;
@@ -56,7 +56,7 @@ namespace Hqub.Lastfm.Cache
             {
                 cache.Remove(item.Date);
             }
-#if NET45
+#if NET452
             return Task.FromResult(0);
 #else
             return Task.CompletedTask;

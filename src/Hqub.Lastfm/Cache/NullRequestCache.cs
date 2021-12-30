@@ -21,7 +21,7 @@ namespace Hqub.Lastfm.Cache
         /// <inheritdoc />
         public Task Add(string request, Stream response)
         {
-#if NET45
+#if NET452
             return Task.FromResult(0);
 #else
             return Task.CompletedTask;
